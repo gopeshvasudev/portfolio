@@ -1,27 +1,8 @@
-import { AiFillInstagram } from "react-icons/ai";
-import { FaEnvelope, FaGithub, FaTwitter } from "react-icons/fa";
-import { GrLinkedinOption } from "react-icons/gr";
+import { FaEnvelope } from "react-icons/fa";
+import { socialMediaIcons } from "../constants/dummyData";
+import SocialMediaIcon from "./SocialMediaIcon";
 
 const MyInfoCard = () => {
-  const socialMediaIcons = [
-    {
-      href: "#",
-      icon: <GrLinkedinOption />,
-    },
-    {
-      href: "#",
-      icon: <FaGithub />,
-    },
-    {
-      href: "#",
-      icon: <AiFillInstagram />,
-    },
-    {
-      href: "#",
-      icon: <FaTwitter />,
-    },
-  ];
-
   return (
     <div className="w-full md:w-[28%] min-h-screen md:max-h-screen md:border-2 border-zinc-700 md:sticky top-0 rounded-3xl p-5 flex flex-col gap-6 xl:gap-8 items-center justify-center">
       <h1 id="text-stroke" className="text-5xl md:text-3xl text-center">
@@ -47,12 +28,8 @@ const MyInfoCard = () => {
       </div>
 
       <div className="social-medias flex flex-wrap gap-5 justify-center">
-        {socialMediaIcons?.map((data, index) => (
-          <a key={index} href={data.href} target="_blank">
-            <div className="icon w-12 h-12 flex items-center justify-center border-2 border-zinc-700 rounded-full text-2xl hover:border-green-400 duration-300">
-              {data.icon}
-            </div>
-          </a>
+        {socialMediaIcons?.map((data) => (
+          <SocialMediaIcon key={data.icon} href={data.href} icon={data.icon} />
         ))}
       </div>
 
