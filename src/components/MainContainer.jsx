@@ -4,6 +4,7 @@ import { FaRegUser } from "react-icons/fa";
 import { GrServices } from "react-icons/gr";
 import { MdDesignServices } from "react-icons/md";
 import SpecializationCard from "./SpecializationCard";
+import LanguageCard from "./LanguageCard";
 
 const MainContainer = () => {
   const specializationCardData = [
@@ -23,6 +24,7 @@ const MainContainer = () => {
       icon: <MdDesignServices />,
     },
   ];
+
   return (
     <div className="container w-full md:w-[72%]">
       <section className="page1 w-full h-screen flex flex-col justify-evenly items-center md:items-start">
@@ -80,8 +82,44 @@ const MainContainer = () => {
         </div>
       </section>
 
-      <section className="page4 w-full min-h-screen flex flex-col items-start">
-        <PageTitle titleName={"My Skills"} titleIcon={<PiShapesBold />}/>
+      <section className="page4 w-full min-h-screen flex flex-col items-center md:items-start pt-20">
+        <PageTitle titleName={"My Skills"} titleIcon={<PiShapesBold />} />
+
+        <h2 className="text-3xl md:text-[4vw] text-center md:text-start font-light leading-[1.2] mt-12 mb-5">
+          My
+          <span className="text-green-400 font-light"> Advantages</span>
+        </h2>
+
+        <div className="languages-card w-full flex flex-wrap justify-center md:justify-start gap-5">
+          <LanguageCard
+            imageUrl={"../assets/lang/html.webp"}
+            altText={"HTML"}
+          />
+          <LanguageCard
+            imageUrl={"../assets/lang/css.webp"}
+            altText={"HTML"}
+          />
+          <LanguageCard
+            imageUrl={"../assets/lang/javascript.webp"}
+            altText={"HTML"}
+          />
+          <LanguageCard
+            imageUrl={"../assets/lang/react.webp"}
+            altText={"HTML"}
+          />
+          <LanguageCard
+            imageUrl={"../assets/lang/express.webp"}
+            altText={"HTML"}
+          />
+          <LanguageCard
+            imageUrl={"../assets/lang/nodejs.webp"}
+            altText={"HTML"}
+          />
+          <LanguageCard
+            imageUrl={"../assets/lang/mongodb.webp"}
+            altText={"HTML"}
+          />
+        </div>
       </section>
     </div>
   );
