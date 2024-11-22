@@ -8,6 +8,7 @@ import {
   languageCardData,
   specializationCardData,
 } from "../constants/dummyData";
+import { RiSuitcaseLine } from "react-icons/ri";
 
 const MainContainer = () => {
   return (
@@ -84,6 +85,17 @@ const MainContainer = () => {
             />
           ))}
         </div>
+      </section>
+
+      <section className="page5 w-full min-h-screen flex flex-col items-center md:items-start pt-20">
+        <PageTitle titleName={"Portfolio"} titleIcon={<RiSuitcaseLine />} />
+
+        <h2 className="text-3xl md:text-[4vw] text-center md:text-start font-light leading-[1.2] mt-12 mb-6">
+          Featured
+          <span className="text-green-400 font-light"> Projects</span>
+        </h2>
+
+        <div className="project-card-container w-full"></div>
       </section>
     </div>
   );
