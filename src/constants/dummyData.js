@@ -24,18 +24,21 @@ export const socialMediaIcons = [
 
 export const specializationCardData = [
   {
-    title: "Creative Design",
-    description: "I creates digital experience modern, animated and smooth",
+    title: "Web Design",
+    description:
+      "Creating modern and user-friendly website designs using tools like Figma. I focus on making designs that look great and are easy to use",
     icon: MdDesignServices,
   },
   {
-    title: "Creative Design",
-    description: "I creates digital experience modern, animated and smooth",
+    title: "Frontend Development",
+    description:
+      "Building websites and apps that work on all devices using React, HTML, CSS, and JavaScript. I make sure everything looks good and runs smoothly.",
     icon: MdDesignServices,
   },
   {
-    title: "Creative Design",
-    description: "I creates digital experience modern, animated and smooth",
+    title: "Full-Stack Development",
+    description:
+      "Developing complete applications with the MERN stack (MongoDB, Express, React, Node.js). I handle everything from the database to the user interface.",
     icon: MdDesignServices,
   },
 ];
