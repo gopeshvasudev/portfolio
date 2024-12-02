@@ -3,32 +3,42 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: gilroyLight;
-    src: url(../fonts/Gilroy-Light.woff2);
+  font-family: gilroyLight;
+  src: url(../fonts/Gilroy-Light.woff2);
 }
 
 @font-face {
-    font-family: gilroyBold;
-    src: url(../fonts/Gilroy-ExtraBold.woff2);
+  font-family: gilroyBold;
+  src: url(../fonts/Gilroy-ExtraBold.woff2);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: gilroyLight;
-    font-weight: 700;
-    letter-spacing: .7px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroyLight;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #18181b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4ade80;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-#text-stroke {
-    color: transparent;
-    -webkit-text-stroke: 1px #4ADE80;
-    font-family: gilroyBold;
+#text-stroke,
+#project-text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px #4ade80;
+  font-family: gilroyBold;
 }
