@@ -6,9 +6,11 @@ import SpecializationCard from "./SpecializationCard";
 import LanguageCard from "./LanguageCard";
 import {
   languageCardData,
+  projectCardsData,
   specializationCardData,
 } from "../constants/dummyData";
 import { RiSuitcaseLine } from "react-icons/ri";
+import ProjectCard from "./ProjectCard";
 
 const MainContainer = () => {
   return (
@@ -87,7 +89,7 @@ const MainContainer = () => {
         </div>
       </section>
 
-      <section className="page5 w-full min-h-screen flex flex-col items-center md:items-start pt-20">
+      <section className="page5 w-full min-h-screen flex flex-col items-center md:items-start pt-20 pb-2">
         <PageTitle titleName={"Portfolio"} titleIcon={<RiSuitcaseLine />} />
 
         <h2 className="text-3xl md:text-[4vw] text-center md:text-start font-light leading-[1.2] mt-12 mb-6">
@@ -95,7 +97,11 @@ const MainContainer = () => {
           <span className="text-green-400 font-light"> Projects</span>
         </h2>
 
-        <div className="project-card-container w-full"></div>
+        <div className="project-card-container w-full flex flex-col gap-10">
+          {projectCardsData?.map((data) => (
+            <ProjectCard key={data.name} data={data} />
+          ))}
+        </div>
       </section>
     </div>
   );

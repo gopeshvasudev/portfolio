@@ -73,3 +73,16 @@ export const languageCardData = [
     text: "Gsap",
   },
 ];
+
+export const projectCardsData = [
+  {
+    image: "../assets/projects/skinny.webp",
+    name: "Skinny Dipped",
+    tags: ["Animated", "Modern"]
+  },
+  {
+    image: "../assets/projects/harley.webp",
+    name: "Harley Davidson",
+    tags: ["Javascript", "Canvas"]
+  },
+];
