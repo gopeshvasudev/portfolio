@@ -6,7 +6,7 @@ const ProjectCard = ({ data }) => {
   const { image, name, tags } = data;
 
   return (
-    <div className="project-card w-full flex flex-col gap-2 items-start">
+    <div className="project-card w-full flex flex-col gap-4 items-start">
       <figure
         className="project-image w-full xl:max-w-3xl h-64 sm:h-72 md:h-80 lg:h-96 rounded-xl overflow-hidden relative"
         onMouseEnter={() => setCardOnHoverEffect(true)}
@@ -27,7 +27,7 @@ const ProjectCard = ({ data }) => {
         </div>
       </figure>
 
-      <h2 className="text-xl lg:text-2xl font-light">{name}</h2>
+      <h2 className="text-xl lg:text-2xl">{name}</h2>
     </div>
   );
 };
