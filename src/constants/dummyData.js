@@ -78,11 +78,13 @@ export const projectCardsData = [
   {
     image: "../assets/projects/skinny.webp",
     name: "Skinny Dipped",
-    tags: ["Animated", "Modern"]
+    tags: ["Animated", "Modern"],
+    route: "skinny-dipped",
   },
   {
     image: "../assets/projects/harley.webp",
     name: "Harley Davidson",
-    tags: ["Javascript", "Canvas"]
+    tags: ["Javascript", "Canvas"],
+    route: "harley-davidson",
   },
 ];

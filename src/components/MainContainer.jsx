@@ -11,6 +11,7 @@ import {
 } from "../constants/dummyData";
 import { RiSuitcaseLine } from "react-icons/ri";
 import ProjectCard from "./ProjectCard";
+import { Link } from "react-router-dom";
 
 const MainContainer = () => {
   return (
@@ -99,7 +100,9 @@ const MainContainer = () => {
 
         <div className="project-card-container w-full flex flex-col gap-10">
           {projectCardsData?.map((data) => (
-            <ProjectCard key={data.name} data={data} />
+            <Link key={data.name} to={`/project/${data.route}`}>
+              <ProjectCard data={data} />
+            </Link>
           ))}
         </div>
       </section>
