@@ -11,9 +11,9 @@ const MyInfoCard = () => {
 
       <div className="profile-image w-56 h-56 md:w-full lg:w-56 lg:h-56 rounded-xl overflow-hidden">
         <img
-          src="https://imgs.search.brave.com/_U7W1nzVBWm6ea2LjrColYxF-68PMWOnmwJlUTLHPU8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTQ0/MzE0ODEwL3Bob3Rv/L3BvcnRyYWl0LW9m/LW1hbi5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9WFZHTU1B/VVhQMWR1d0MtVWJj/RGE3ZTIwblN6Sjdj/UDNwT3doTzNFdnZS/bz0"
+          src="../assets/me.jpeg"
           alt="Gopesh vasudev"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
       </div>
 

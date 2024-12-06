@@ -90,7 +90,10 @@ const MainContainer = () => {
         </div>
       </section>
 
-      <section className="page5 w-full min-h-screen flex flex-col items-center md:items-start pt-20 pb-2">
+      <section
+        id="projects"
+        className="page5 w-full min-h-screen flex flex-col items-center md:items-start pt-20 pb-2"
+      >
         <PageTitle titleName={"Portfolio"} titleIcon={<RiSuitcaseLine />} />
 
         <h2 className="text-3xl md:text-[4vw] text-center md:text-start font-light leading-[1.2] mt-12 mb-6">

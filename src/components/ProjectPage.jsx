@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { PiHouseLineBold } from "react-icons/pi";
 import { Link, useParams } from "react-router-dom";
 import projectsData from "../constants/projectsData";
+import TechnologyTag from "./TechnologyTag";
 
 const ProjectPage = () => {
   const { projectName } = useParams();
@@ -12,6 +13,10 @@ const ProjectPage = () => {
   );
 
   const filterData = filteringData?.[0];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="main w-full bg-zinc-900 text-white">
@@ -54,15 +59,21 @@ const ProjectPage = () => {
             </span>
           </h3>
         </div>
-        <div className="right w-full md:w-[60%] p-1 flex flex-col items-center md:items-start justify-between gap-20">
+        <div className="right w-full md:w-[60%] p-1 flex flex-col items-center md:items-start justify-between gap-10">
           <p className="text-sm md:text-base lg:text-lg w-full md:w-[80%] text-center md:text-start leading-6 md:leading-8 font-light">
             {filterData.overview}
           </p>
 
+          <div className="technologies-container flex flex-wrap justify-center md:justify-start gap-2">
+            {filterData?.technologies?.map((tag) => (
+              <TechnologyTag key={tag} name={tag} />
+            ))}
+          </div>
+
           <a
             href={filterData.deployedUrl}
             target="_blank"
-            className="border-b hover:text-green-400 duration-300"
+            className="border-b hover:text-green-400 duration-300 mt-10"
           >
             Launch Project
           </a>
