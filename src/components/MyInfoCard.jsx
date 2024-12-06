@@ -34,10 +34,11 @@ const MyInfoCard = () => {
       </div>
 
       <a
-        href="#"
+        href="https://linkedin.com/in/gopeshvasudev"
+        target="_blank"
         className="w-8/12 sm:w-6/12 md:w-full xl:w-10/12 py-3 rounded-full border-2 border-green-400 bg-green-400 hover:bg-transparent text-black hover:text-white duration-300 flex items-center justify-center gap-2"
       >
-        <FaEnvelope /> Hire Me!
+        <FaEnvelope /> Say Hi!
       </a>
     </div>
   );

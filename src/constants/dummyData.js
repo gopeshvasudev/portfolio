@@ -1,23 +1,25 @@
 import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
+import { LuServerCrash } from "react-icons/lu";
 import { MdDesignServices } from "react-icons/md";
+import { TbHeartRateMonitor } from "react-icons/tb";
 
 export const socialMediaIcons = [
   {
-    href: "#",
+    href: "https://linkedin.com/in/gopeshvasudev",
     icon: GrLinkedinOption,
   },
   {
-    href: "#",
+    href: "https://github.com/gopeshvasudev",
     icon: FaGithub,
   },
   {
-    href: "#",
+    href: "https://instagram.com/gopeshvasudev/",
     icon: AiFillInstagram,
   },
   {
-    href: "#",
+    href: "https://twitter.com/gopeshvasudev",
     icon: FaTwitter,
   },
 ];
@@ -33,13 +35,13 @@ export const specializationCardData = [
     title: "Frontend Development",
     description:
       "Building websites and apps that work on all devices using React, HTML, CSS, and JavaScript. I make sure everything looks good and runs smoothly.",
-    icon: MdDesignServices,
+    icon: TbHeartRateMonitor,
   },
   {
     title: "Full-Stack Development",
     description:
       "Developing complete applications with the MERN stack (MongoDB, Express, React, Node.js). I handle everything from the database to the user interface.",
-    icon: MdDesignServices,
+    icon: LuServerCrash,
   },
 ];
 
