@@ -76,15 +76,21 @@ export const languageCardData = [
 
 export const projectCardsData = [
   {
+    image: "../assets/projects/netflixgg.webp",
+    name: "NetflixGG",
+    tags: ["Dynamic", "Movie Showcasing"],
+    route: "netflixgg",
+  },
+  {
     image: "../assets/projects/skinny.webp",
     name: "Skinny Dipped",
-    tags: ["Animated", "Modern"],
+    tags: ["Animated", "Modern", "Punchy"],
     route: "skinny-dipped",
   },
   {
     image: "../assets/projects/harley.webp",
     name: "Harley Davidson",
-    tags: ["Javascript", "Canvas"],
+    tags: ["Animated", "Minimal", "Futuristic"],
     route: "harley-davidson",
   },
 ];
