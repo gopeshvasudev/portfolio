@@ -20,7 +20,7 @@ const MainContainer = () => {
         <PageTitle titleName="Introduce" titleIcon={<PiHouseLineBold />} />
 
         <h1 className="text-4xl text-center md:text-start md:text-[5.5vw] leading-[1.1] font-light">
-          Say Hi from <span className="text-green-400 font-light">Gopesh</span>,{" "}
+          Say Hi To <span className="text-green-400 font-light">Gopesh</span>,
           <br />
           Frontend & Full Stack <br />
           Developer
@@ -76,7 +76,7 @@ const MainContainer = () => {
 
         <h2 className="text-3xl md:text-[4vw] text-center md:text-start font-light leading-[1.2] mt-12 mb-6">
           My
-          <span className="text-green-400 font-light"> Advantages</span>
+          <span className="text-green-400 font-light"> Expertise</span>
         </h2>
 
         <div className="languages-card w-full flex flex-wrap justify-center md:justify-start gap-10">
