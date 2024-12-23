@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 const MainContainer = () => {
   return (
     <div className="container w-full md:w-[72%]">
-      <section className="page1 w-full h-screen flex flex-col justify-evenly items-center md:items-start">
+      <section className="page1 w-full min-h-[60vh] flex flex-col justify-evenly items-center md:items-start gap-16 mt-20">
         <PageTitle titleName="Introduce" titleIcon={<PiHouseLineBold />} />
 
         <h1 className="text-4xl text-center md:text-start md:text-[5.5vw] leading-[1.1] font-light">
@@ -33,7 +33,7 @@ const MainContainer = () => {
         </p>
       </section>
 
-      <section className="page2 w-full h-screen flex flex-col items-center md:items-start justify-evenly">
+      <section className="page2 w-full min-h-[60vh] flex flex-col items-center md:items-start justify-evenly gap-16 mt-20">
         <PageTitle titleName="About" titleIcon={<FaRegUser />} />
 
         <div>
@@ -51,7 +51,7 @@ const MainContainer = () => {
         </div>
       </section>
 
-      <section className="page3 w-full min-h-screen flex flex-col items-center md:items-start">
+      <section className="page3 w-full min-h-screen flex flex-col items-center md:items-start mt-20">
         <PageTitle titleName="Services" titleIcon={<GrServices />} />
 
         <h2 className="text-3xl md:text-[4vw] text-center md:text-start font-light leading-[1.2] mt-12 mb-5">
