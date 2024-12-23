@@ -26,7 +26,7 @@ const MainContainer = () => {
               y: "100%",
               opacity: 0,
             }}
-            animate={{
+            whileInView={{
               y: "0%",
               opacity: 1,
               transition: { duration: 0.8 },
@@ -43,7 +43,7 @@ const MainContainer = () => {
         <div className="overflow-hidden">
           <motion.p
             initial={{ opacity: 0, y: "100%" }}
-            animate={{ opacity: 1, y: "0%", transition: { duration: 1 } }}
+            whileInView={{ opacity: 1, y: "0%", transition: { duration: 1 } }}
             className="font-light text-center md:text-start text-zinc-300"
           >
             I design and code beautifully simple things and I love what i do.{" "}

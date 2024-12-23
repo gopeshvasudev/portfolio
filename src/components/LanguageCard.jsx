@@ -12,7 +12,7 @@ const LanguageCard = ({ imageUrl, text }) => {
           opacity: 1,
           transition: { duration: 1 },
         }}
-        className="language-card w-[160px] h-[220px] rounded-full border-2 border-zinc-600 flex items-center justify-center overflow-hidden p-5 hover:border-green-400 duration-300"
+        className="language-card w-[140px] h-[200px] md:w-[160px] md:h-[220px] rounded-full border-2 border-zinc-600 flex items-center justify-center overflow-hidden p-5 hover:border-green-400 duration-300"
       >
         <img
           src={imageUrl}
