@@ -8,6 +8,19 @@ const projectsData = [
     technologies: ["React", "Firebase", "TMDB API's", "Tailwind CSS"],
   },
   {
+    route: "quizflow",
+    title: "Quiz | Flow",
+    image: "../assets/projects/quizflow.webp",
+    overview: `QuizFlow is a fun and interactive quiz web app where you can test your knowledge and challenge yourself with exciting questions. App comes with multiple-choice questions, making it easy and engaging to play. You will get 10 questions to answer, for each question you will get one point. At the end of the quiz, you receive instant feedback on your score, helping you track your progress and improve. With a simple and user-friendly design, QuizFlow ensures a smooth experience on any device. Whether you’re playing for fun or to sharpen your skills, QuizFlow is the perfect place to enjoy learning. Try it now.`,
+    deployedUrl: "https://quizflow-phi.vercel.app",
+    technologies: [
+      "React",
+      "Redux and RTK",
+      "External Quiz API",
+      "Tailwind CSS",
+    ],
+  },
+  {
     route: "skinny-dipped",
     title: "Skinny Dipped",
     image: "../assets/projects/skinny.webp",

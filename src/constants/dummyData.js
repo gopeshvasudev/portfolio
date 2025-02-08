@@ -84,6 +84,12 @@ export const projectCardsData = [
     route: "netflixgg",
   },
   {
+    image: "../assets/projects/quizflow.webp",
+    name: "Quiz | Flow",
+    tags: ["Quizzes", "Play & Fun", "Learning"],
+    route: "quizflow",
+  },
+  {
     image: "../assets/projects/skinny.webp",
     name: "Skinny Dipped",
     tags: ["Animated", "Modern", "Punchy"],
