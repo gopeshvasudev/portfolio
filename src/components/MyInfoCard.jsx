@@ -1,4 +1,5 @@
-import { FaEnvelope } from "react-icons/fa";
+import { PiReadCvLogoFill } from "react-icons/pi";
+
 import { socialMediaIcons } from "../constants/dummyData";
 import SocialMediaIcon from "./SocialMediaIcon";
 
@@ -34,11 +35,11 @@ const MyInfoCard = () => {
       </div>
 
       <a
-        href="https://linkedin.com/in/gopeshvasudev"
-        target="_blank"
+        href="../assets/Gopesh_Resume.pdf"
+        download={"Gopesh_Resume"}
         className="w-8/12 sm:w-6/12 md:w-full xl:w-10/12 py-3 rounded-full border-2 border-green-400 bg-green-400 hover:bg-transparent text-black hover:text-white duration-300 flex items-center justify-center gap-2"
       >
-        <FaEnvelope /> Say Hi!
+        <PiReadCvLogoFill />My Resume
       </a>
     </div>
   );
